@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Enumeration;
 
 public class Inventory
 {
@@ -25,31 +26,38 @@ public class Inventory
     //Methods
     public String getCar() {
         return Car;
+
     }
 
     public void setCar(String _car) {
         Car = _car;
+
     }
 
     public String getAccessories() {
         return Accessories;
+
     }
 
     public void setAccessories(String _accessories) {
         Accessories = _accessories;
+
     }
 
     public String getParts() {
         return Parts.toString();
+
     }
 
     public void setParts(ArrayList<Inventory> Parts) {
         Parts.toString();
     }
 
-    public static void printParts(ArrayList<Inventory> partsList) {
+    public static void printParts(ArrayList<Inventory> partsList)
+    {
         System.out.println("Parts list: ");
-        for (Inventory part : partsList) {
+        for (Inventory part : partsList)
+        {
             System.out.println(part.part1);
         }
     }
